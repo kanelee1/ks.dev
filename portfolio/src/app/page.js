@@ -1,17 +1,51 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Heading, Blockquote } from "@radix-ui/themes";
+import { Heading, Blockquote, Text, Em, Separator, Code, Flex } from "@radix-ui/themes";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        
-        <section className={styles.aboutSection}>
-          <Blockquote size="8" weight="bold">
-            Welcome!
-          </Blockquote>
+    <div id="home" className={styles.page}>
+
+      <main  className={styles.main}>
+        <Blockquote size="9" weight="bold" color="">
+          <Em>Welcome!</Em>
+        </Blockquote>
+
+        <section id="about" className={styles.sectionContainer}>
           
+          <Flex gap="3" style={{marginBottom: '1rem'}}>
+            <Image
+              src="/pfp.jpg"
+              width={100}
+              height={100}
+              alt="picture of me!"
+              style={{display: 'flex', marginBottom: '1rem'}}
+            />
+            
+            <Flex style={{marginBottom: '1rem', flexDirection: 'column'}}>
+              <Heading size="8">Kane Svelan</Heading>
+              <Heading size="4" weight="medium">Student | Software Developer</Heading>
+            </Flex>
+          </Flex>
+          
+          <Flex>
+            <Text weight="light" style={{maxWidth: '45rem'}}>
+              Junior enrolled at Cal State University San Marcos pursuing a degree in 
+              Computer Information Systems, expecting to graduate in Fall 2025. Aspiring 
+              software developer with a foundation in JavaScript and C++, seeking an 
+              internship opportunity to contribute to full-stack development and gain 
+              hands-on experience with DevOps practices.
+
+            </Text>
+          </Flex>
+        </section>
+
+        <section id="projects" className={styles.sectionContainer}>
+          <Heading size="8">Projects</Heading>
+        </section>
+
+        <section id="contact" className={styles.sectionContainer}>
+          <Heading size="8">Contact Me!</Heading>
         </section>
 
         <div className={styles.ctas}>

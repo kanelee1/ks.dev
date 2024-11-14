@@ -2,25 +2,23 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 100;
     padding: 0.5rem 2.5rem;
 
     border-bottom: solid;
     border-width: 1px;
-    border-color: rgba(128, 128, 128, 0.5);
+    border-color: rgba(36, 38, 42, 1);
+    background-color: rgba(17, 17, 19, 0.8);
+    backdrop-filter: blur(10px);
     
     font-family: var(--font-geist-sans)
 }
 
-.headerNav {
+.lightSwitch {
     align-items: center;
 }
 
-.navListItem a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
 .headerLogoText {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
