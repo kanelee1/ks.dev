@@ -12,11 +12,21 @@ import Link from 'next/link';
 
 export default function PageHeader() {
   const [activeTab, setActiveTab] = useState("home");
+  const [lightSwitch, setLightSwitch] = useState(false);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
 
+  const handleLightSwitch = () => {
+    if (!lightSwitch) {
+      setLightSwitch(true);
+    } else {
+      setLightSwitch(false);
+    }
+
+    console.log("light on?: ", lightSwitch);
+  }
 
   return (
     <Flex className={styles.container}>
@@ -44,7 +54,7 @@ export default function PageHeader() {
 
       <Flex className={styles.lightSwitch} gap="2">
         {/* TODO: add onClick() to change to dark mode */}
-        <Switch color='orange'/>
+        <Switch color='orange' onClick={() => handleLightSwitch(true)}/>
         <Text weight="thin" size="2">Light</Text>
       </Flex>
 

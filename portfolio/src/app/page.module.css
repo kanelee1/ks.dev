@@ -58,7 +58,6 @@
 }
 
 .sectionContainer {
-  height: 100vh;
   padding: 4rem 0rem;
 }
 
@@ -96,6 +95,12 @@ a.primary {
 a.secondary {
   border-color: var(--gray-alpha-200);
   min-width: 180px;
+}
+
+.stackIcon {
+  height: 100px;
+  width: 100;
+  padding: 1rem;
 }
 
 .footer {

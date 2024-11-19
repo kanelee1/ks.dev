@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Heading, Blockquote, Text, Em, Separator, Code, Flex } from "@radix-ui/themes";
+import { Heading, Blockquote, Text, Em, Separator, Flex, Card } from "@radix-ui/themes";
+import StackIcon from "tech-stack-icons";
+
 
 export default function Home() {
   return (
@@ -23,29 +25,50 @@ export default function Home() {
             />
             
             <Flex style={{marginBottom: '1rem', flexDirection: 'column'}}>
-              <Heading size="8">Kane Svelan</Heading>
-              <Heading size="4" weight="medium">Student | Software Developer</Heading>
+              <Heading size="8" weight="medium">Kane Svelan</Heading>
+              <Heading size="4" weight="regular">Student | Software Developer</Heading>
             </Flex>
           </Flex>
           
-          <Flex>
+          <Flex style={{marginBottom: '1rem'}}>
             <Text weight="light" style={{maxWidth: '45rem'}}>
-              Junior enrolled at Cal State University San Marcos pursuing a degree in 
-              Computer Information Systems, expecting to graduate in Fall 2025. Aspiring 
+              Senior Computer Science student expecting to graduate in Fall 2025. Aspiring 
               software developer with a foundation in JavaScript and C++, seeking an 
               internship opportunity to contribute to full-stack development and gain 
               hands-on experience with DevOps practices.
 
             </Text>
           </Flex>
+
+          <Flex style={{flexDirection: 'column', width: '500px'}}>
+            <Heading size="5" weight="medium">Techstack:</Heading>
+            <Flex style={{justifyContent: 'center', alignContent: 'center', flexWrap: 'wrap'}}>
+              <StackIcon name="js" className={styles.stackIcon}/>
+              <StackIcon name="html5" className={styles.stackIcon}/>
+              <StackIcon name="css3" className={styles.stackIcon}/>
+              <StackIcon name="c++" className={styles.stackIcon}/>
+              <StackIcon name="python" className={styles.stackIcon}/>
+              <StackIcon name="reactjs" className={styles.stackIcon}/>
+              <StackIcon name="nextjs2" className={styles.stackIcon}/>
+              <StackIcon name="mysql" className={styles.stackIcon}/>
+              <StackIcon name="mongodb" className={styles.stackIcon}/>
+              <StackIcon name="docker" className={styles.stackIcon}/>
+              <StackIcon name="git" className={styles.stackIcon}/>
+            </Flex>
+          </Flex>
         </section>
+
+        <Separator />
 
         <section id="projects" className={styles.sectionContainer}>
           <Heading size="8">Projects</Heading>
         </section>
 
+        <Separator />
+
         <section id="contact" className={styles.sectionContainer}>
           <Heading size="8">Contact Me!</Heading>
+          
         </section>
 
         <div className={styles.ctas}>
