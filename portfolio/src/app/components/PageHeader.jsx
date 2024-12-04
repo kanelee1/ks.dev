@@ -2,12 +2,11 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import styles from './PageHeader.module.css'
 import { Flex, TabNav, Switch, Text } from "@radix-ui/themes";
+import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import Link from 'next/link';
-
 
 
 export default function PageHeader() {
@@ -18,15 +17,15 @@ export default function PageHeader() {
     setActiveTab(tab);
   };
 
+  // toggle state of lightSwitch
   const handleLightSwitch = () => {
-    if (!lightSwitch) {
-      setLightSwitch(true);
-    } else {
-      setLightSwitch(false);
-    }
+    setLightSwitch(prevState => !prevState); 
+  };
 
-    console.log("light on?: ", lightSwitch);
-  }
+  // log whenever lightSwitch is turned on or off
+  useEffect(() => {
+    console.log("Light is", lightSwitch ? 'On' : 'Off');
+  }, [lightSwitch]);  
 
   return (
     <Flex className={styles.container}>
@@ -54,8 +53,8 @@ export default function PageHeader() {
 
       <Flex className={styles.lightSwitch} gap="2">
         {/* TODO: add onClick() to change to dark mode */}
-        <Switch color='orange' onClick={() => handleLightSwitch(true)}/>
-        <Text weight="thin" size="2">Light</Text>
+        <Switch color='blue' defaultChecked={false}  onClick={() => handleLightSwitch()} />
+        {lightSwitch ? <SunIcon /> : <MoonIcon />}
       </Flex>
 
     </Flex>

@@ -4,6 +4,7 @@ import { Heading, Blockquote, Text, Em, Separator, Flex, Card } from "@radix-ui/
 import StackIcon from "tech-stack-icons";
 
 
+
 export default function Home() {
   return (
     <div id="home" className={styles.page}>
@@ -62,6 +63,7 @@ export default function Home() {
 
         <section id="projects" className={styles.sectionContainer}>
           <Heading size="8">Projects</Heading>
+          
         </section>
 
         <Separator />
