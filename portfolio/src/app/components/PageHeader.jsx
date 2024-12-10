@@ -3,14 +3,13 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import styles from './PageHeader.module.css'
-import { Flex, TabNav, Switch, Text } from "@radix-ui/themes";
+import { Flex, TabNav, Switch } from "@radix-ui/themes";
 import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
-import Image from 'next/image';
 import Link from 'next/link';
 
 
 export default function PageHeader() {
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("about");
   const [lightSwitch, setLightSwitch] = useState(false);
 
   const handleTabClick = (tab) => {
@@ -31,14 +30,11 @@ export default function PageHeader() {
     <Flex className={styles.container}>
 
       <Flex className={styles.headerLogo}>
-        <Link href="#home" className={styles.headerLogoText}>ks.dev</Link>
+        <Link href="#about" className={styles.headerLogoText}>ks.dev</Link>
       </Flex>
 
       <Flex className={styles.tabNav}>
         <TabNav.Root>
-          <TabNav.Link asChild active={activeTab === "home"}>
-            <Link href="#home" onClick={() => handleTabClick("home")}>Home</Link>
-          </TabNav.Link>
           <TabNav.Link asChild active={activeTab === "about"}>
             <Link href="#about" onClick={() => handleTabClick("about")}>About</Link>
           </TabNav.Link>

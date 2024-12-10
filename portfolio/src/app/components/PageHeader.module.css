@@ -2,14 +2,14 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 100;
-    padding: 0.5rem 2.5rem;
+    
+    padding: 0.5rem 80px;
 
     border-bottom: solid;
     border-width: 1px;
     border-color: rgba(36, 38, 42, 1);
     background-color: rgba(17, 17, 19, 0.8);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(9px);
     
     font-family: var(--font-geist-sans)
 }
@@ -21,4 +21,10 @@
 .headerLogoText {
     font-size: 30px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem 32px;
+    }
 }

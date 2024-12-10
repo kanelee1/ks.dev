@@ -13,10 +13,11 @@
     "@radix-ui/react-icons": "^1.3.1",
     "@radix-ui/react-navigation-menu": "^1.2.1",
     "@radix-ui/themes": "^3.1.5",
-    "motion": "^11.13.1",
+    "framer-motion": "^11.13.1",
     "next": "15.0.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-social-icons": "^6.18.0",
     "tech-stack-icons": "^2.1.0"
   },
   "devDependencies": {
