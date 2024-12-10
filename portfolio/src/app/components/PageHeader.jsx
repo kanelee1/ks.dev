@@ -11,7 +11,23 @@ import Link from 'next/link';
 export default function PageHeader() {
   const [activeTab, setActiveTab] = useState("about");
   const [lightSwitch, setLightSwitch] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
+  useEffect(() => {
+    // set tabNav to hidden if window less than 600px
+    const handleResize = () => {
+      setHidden(window.innerWidth > 600);
+    }
+
+    // listen for screen resize
+    window.addEventListener('resize', handleResize);
+
+    // remove event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [])
+  
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -22,6 +38,10 @@ export default function PageHeader() {
   };
 
   // log whenever lightSwitch is turned on or off
+  /**
+   *  TO-DO:
+   *    Lightmode darkmode
+   */
   useEffect(() => {
     console.log("Light is", lightSwitch ? 'On' : 'Off');
   }, [lightSwitch]);  
@@ -33,8 +53,8 @@ export default function PageHeader() {
         <Link href="#about" className={styles.headerLogoText}>ks.dev</Link>
       </Flex>
 
-      <Flex className={styles.tabNav}>
-        <TabNav.Root>
+      <Flex className={styles.tabNavContainer}>
+        <TabNav.Root hidden={hidden} size="2">
           <TabNav.Link asChild active={activeTab === "about"}>
             <Link href="#about" onClick={() => handleTabClick("about")}>About</Link>
           </TabNav.Link>

@@ -66,11 +66,6 @@
   color: #a2a5ab;
 }
 
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
 .socialIcon:hover {
   color: white;
 }
@@ -95,37 +90,10 @@
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.stackIcon {
-  height: 75;
-  width: 75;
-  
-}
-
 .footer {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
 }
 
 /* Enable hover only on non-touch devices */
@@ -159,20 +127,6 @@ a.secondary {
 
   .main ol {
     text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
   }
 
   .footer {

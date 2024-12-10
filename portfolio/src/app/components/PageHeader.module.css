@@ -14,6 +14,8 @@
     font-family: var(--font-geist-sans)
 }
 
+/*TO-DO: TabNav into Hamburger or smaller for mobile*/
+
 .lightSwitch {
     align-items: center;
 }
