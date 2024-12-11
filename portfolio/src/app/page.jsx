@@ -1,6 +1,6 @@
 import { Badge, Em, Flex, Heading, Separator, Text, Section } from "@radix-ui/themes";
-import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
-import { SocialIcon } from "react-social-icons/component";
+import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
+import * as Form from '@radix-ui/react-form'
 import 'react-social-icons/facebook'
 import 'react-social-icons/linkedin'
 import 'react-social-icons/github'
@@ -39,6 +39,8 @@ export default function Home() {
                 </Link>
               </Flex>
             </Flex>
+
+            <Separator />
 
             <Flex gapY="2" style={{flexDirection: 'column'}}>
               <Heading size="5" weight="medium">ABOUT</Heading>
@@ -132,8 +134,13 @@ export default function Home() {
                 <li>Server side computation written in PHP for database interaction and CRUD functionality</li>
               </ul>
             </Flex>
+            <a href="#" className={styles.anchor}>
+              <Text className={styles.anchorText}>View Full CSV/Resume</Text>
+              <ArrowTopRightIcon />
+            </a>
 
           </Flex>
+
         </section>
 
         <Separator />
@@ -144,7 +151,7 @@ export default function Home() {
         </section>
       </main>
       <footer className={styles.footer}>
-        
+        <Text>Built using Next.js and RadixUI by me :)</Text>
       </footer>
     </div>
   );

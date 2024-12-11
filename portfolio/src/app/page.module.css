@@ -66,8 +66,13 @@
   color: #a2a5ab;
 }
 
-.socialIcon:hover {
-  color: white;
+.anchorText {
+  padding-right: 2px;
+}
+
+.anchor:hover {
+  color: rgb(193, 252, 193);
+  transition: color 0.3 ease;
 }
 
 .ctas a {
