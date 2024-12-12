@@ -44,11 +44,11 @@ export default function Home() {
             <Flex gapY="2" style={{flexDirection: 'column'}}>
               <Heading size="5" weight="medium">ABOUT</Heading>
               <Text weight="light" color="gray" style={{maxWidth: '45rem'}}>
-                Computer Science student expecting to graduate in Fall 2025. 
-                Aspiring software developer with a strong background in web development, 
+                I am a Senior Computer Science student expecting to graduate in Fall 2025. 
+                As an aspiring software developer with a strong background in web development, 
                 I am seeking an internship opportunity where I can contribute to 
                 innovative projects, embrace new challenges, and gain hands-on experience 
-                with modern DevOps practices. I'd love to help your team!
+                with full-stack development.
               </Text>
             </Flex>
             
@@ -89,23 +89,6 @@ export default function Home() {
         <section id="projects" className={styles.sectionContainer}>
           <Flex gap="8" style={{flexDirection: 'column'}}>
             <Heading size="5" weight="medium">PROJECTS</Heading>
-
-            <Card size="3">
-              <Flex gapY="2" style={{flexDirection: 'column'}}>
-                <Heading size="5" weight="light">This Website!</Heading>
-                <Flex gap="1">
-                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
-                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
-                  <Badge radius="full" color="blue" size="2">Next.js</Badge>
-                  <Badge radius="full" color="orange" size="2">RadixUI</Badge>
-                </Flex>
-                <ul className={styles.listContainer}>
-                  <li><Text color="gray" weight="regular" >Designed responsive, minimalistic web portfolio with clean colorscheme...I think (colorblind).</Text></li>
-                  <li><Text color="gray" weight="regular">Implemented features includng page routing, animations, and light/dark mode switching.</Text></li>
-                  <li><Text color="gray" weight="regular"></Text></li>
-                </ul>
-              </Flex>
-            </Card>
 
             <Card size="3">
               <Flex gapY="2" style={{flexDirection: 'column'}}>
@@ -174,7 +157,7 @@ export default function Home() {
         </section>
       </main>
       <footer className={styles.footer}>
-        <Text>Built using Next.js and RadixUI by me :)</Text>
+        <Text size="1">Built using Next.js and RadixUI, deployed with GitHub Pages.</Text>
       </footer>
     </div>
   );

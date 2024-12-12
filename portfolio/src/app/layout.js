@@ -30,8 +30,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" >
           <Theme accentColor="indigo">
             <PageHeader/>
-            {children}
-            
+            <main>{children}</main>
           </Theme>
         </ThemeProvider>
       </body>

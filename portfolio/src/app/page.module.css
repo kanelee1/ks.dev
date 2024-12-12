@@ -83,7 +83,7 @@
 }
 
 .anchor:hover {
-  color: rgb(193, 252, 193);
+  /*color: rgb(193, 252, 193);*/
   text-decoration: underline;
 }
 
