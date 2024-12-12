@@ -1,4 +1,4 @@
-import { Badge, Em, Flex, Heading, Separator, Text, Section } from "@radix-ui/themes";
+import { Badge, Em, Flex, Heading, Separator, Text, Card } from "@radix-ui/themes";
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import 'react-social-icons/facebook'
@@ -55,29 +55,29 @@ export default function Home() {
             <Flex gapY="2" style={{flexDirection: 'column'}}>
               <Heading size="4" weight="light">Technical Skills:</Heading>
               <Flex gap="2">
-                <Badge color="green" size="2">JavaScript</Badge>
-                <Badge color="green" size="2">C++</Badge>
-                <Badge color="green" size="2">HTML/CSS</Badge>
-                <Badge color="green" size="2">SQL</Badge>
+                <Badge color="green" size="3">JavaScript</Badge>
+                <Badge color="green" size="3">C++</Badge>
+                <Badge color="green" size="3">HTML/CSS</Badge>
+                <Badge color="green" size="3">SQL</Badge>
               </Flex>
 
               <Flex gap="2">
-                <Badge color="red" size="2">Git</Badge>
-                <Badge color="red" size="2">MongoDB</Badge>
-                <Badge color="red" size="2">MySQL</Badge>
-                <Badge color="red" size="2">AWS</Badge>
-                <Badge color="red" size="2">GCP</Badge>
+                <Badge color="red" size="3">Git</Badge>
+                <Badge color="red" size="3">MongoDB</Badge>
+                <Badge color="red" size="3">MySQL</Badge>
+                <Badge color="red" size="3">AWS</Badge>
+                <Badge color="red" size="3">GCP</Badge>
               </Flex>
               
               <Flex gap="2">
-                <Badge color="indigo" size="2">React.js</Badge>
-                <Badge color="indigo" size="2">Next.js</Badge>
-                <Badge color="indigo" size="2">Node.js</Badge>
+                <Badge color="indigo" size="3">React.js</Badge>
+                <Badge color="indigo" size="3">Next.js</Badge>
+                <Badge color="indigo" size="3">Node.js</Badge>
               </Flex>
 
               <Flex gap="2">
-                <Badge color="orange" size="2">RadixUI</Badge>
-                <Badge color="orange" size="2">Motion</Badge>
+                <Badge color="orange" size="3">RadixUI</Badge>
+                <Badge color="orange" size="3">Motion</Badge>
               </Flex>
   
             </Flex>
@@ -90,49 +90,73 @@ export default function Home() {
           <Flex gap="8" style={{flexDirection: 'column'}}>
             <Heading size="5" weight="medium">PROJECTS</Heading>
 
-            <Flex gapY="2" style={{flexDirection: 'column'}}>
-              <Heading size="5" weight="light">PIC Health PWA</Heading>
-              <Flex gap="1">
-                <Badge color="green">JavaScript</Badge>
-                <Badge color="green">HTML/CSS</Badge>
-                <Badge color="blue">React Native</Badge>
-                <Badge color="red">Google Calendar API</Badge>
+            <Card size="3">
+              <Flex gapY="2" style={{flexDirection: 'column'}}>
+                <Heading size="5" weight="light">This Website!</Heading>
+                <Flex gap="1">
+                  <Badge color="green" size="2">JavaScript</Badge>
+                  <Badge color="green" size="2">HTML/CSS</Badge>
+                  <Badge color="blue" size="2">Next.js</Badge>
+                  <Badge color="orange" size="2">RadixUI</Badge>
+                </Flex>
+                <ul className={styles.listContainer}>
+                  <li><Text color="gray" weight="regular" >Designed responsive, minimalistic web portfolio with clean colorscheme...I think (colorblind).</Text></li>
+                  <li><Text color="gray" weight="regular">Implemented features includng page routing, animations, and light/dark mode switching.</Text></li>
+                  <li><Text color="gray" weight="regular"></Text></li>
+                </ul>
               </Flex>
-              <ul className={styles.listContainer}>
-                <li>Event and health resource management tool for the Pacific Islander Health organization</li>
-                <li>Implemented features includng fetching, filtering, and displaying upcoming events.</li>
-                <li>User event requests and submission forms can be filled out via Google Forms API</li>
-              </ul>
-            </Flex>
+            </Card>
 
-            <Flex gap="2" style={{flexDirection: 'column'}}>
-              <Heading size="5" weight="light">SeniorSync</Heading>
-              <Flex gap="1">
-                <Badge color="green">JavaScript</Badge>
-                <Badge color="green">HTML/CSS</Badge>
-                <Badge color="red">Pocketbase API</Badge>
+            <Card size="3">
+              <Flex gapY="2" style={{flexDirection: 'column'}}>
+                <Heading size="5" weight="light">PIC Health PWA</Heading>
+                <Flex gap="1">
+                  <Badge color="green" size="2">JavaScript</Badge>
+                  <Badge color="green" size="2">HTML/CSS</Badge>
+                  <Badge color="blue" size="2">React Native</Badge>
+                  <Badge color="red" size="2">Google Calendar API</Badge>
+                </Flex>
+                <ul className={styles.listContainer}>
+                  <li><Text color="gray" weight="regular" >Event and health resource management tool for the Pacific Islander Health organization.</Text></li>
+                  <li><Text color="gray" weight="regular">Implemented features includng fetching, filtering, and displaying upcoming events.</Text></li>
+                  <li><Text color="gray" weight="regular">User event requests and submission forms can be filled out via Google Forms API.</Text></li>
+                </ul>
               </Flex>
-              <ul className={styles.listContainer}>
-                <li>Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</li>
-                <li>Implemented user authentication and family member database relationships through Pocketbase dashboard</li>
-                <li>Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events</li>
-              </ul>
-            </Flex>
+            </Card>
 
-            <Flex gap="2" style={{flexDirection: 'column'}}>
-              <Heading size="5" weight="light">Student Forum</Heading>
-              <Flex gap="1">
-                <Badge color="green">JavaScript</Badge>
-                <Badge color="green">HTML/CSS</Badge>
-                <Badge color="green">PHP</Badge>
-                <Badge color="red">MySQL</Badge>
+            <Card size="3">
+              <Flex gap="2" style={{flexDirection: 'column'}}>
+                <Heading size="5" weight="light">SeniorSync</Heading>
+                <Flex gap="1">
+                  <Badge color="green" size="2">JavaScript</Badge>
+                  <Badge color="green" size="2">HTML/CSS</Badge>
+                  <Badge color="red" size="2">Pocketbase API</Badge>
+                </Flex>
+                <ul className={styles.listContainer}>
+                  <li><Text color="gray" weight="regular">Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
+                  <li><Text color="gray" weight="regular">Implemented user authentication and family member database relationships through Pocketbase dashboard.</Text></li>
+                  <li><Text color="gray" weight="regular">Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events.</Text></li>
+                </ul>
               </Flex>
-              <ul className={styles.listContainer}>
-                <li>Reddit-style web forum tailored for CSUSM students to create threads and comment</li>
-                <li>Implemented features like user authentication, profile customization, post favoriting</li>
-                <li>Server side computation written in PHP for database interaction and CRUD functionality</li>
-              </ul>
-            </Flex>
+            </Card>
+
+            <Card size="3">
+              <Flex gap="2" style={{flexDirection: 'column'}}>
+                <Heading size="5" weight="light">Student Forum</Heading>
+                <Flex gap="1">
+                  <Badge color="green" size="2">JavaScript</Badge>
+                  <Badge color="green" size="2">HTML/CSS</Badge>
+                  <Badge color="green" size="2">PHP</Badge>
+                  <Badge color="red" size="2">MySQL</Badge>
+                </Flex>
+                <ul className={styles.listContainer}>
+                  <li><Text color="gray" weight="regular">Reddit-style web forum tailored for CSUSM students to create threads, comment on posts and search through boards.</Text></li>
+                  <li><Text color="gray" weight="regular">Implemented features like user authentication, profile customization and post favoriting.</Text></li>
+                  <li><Text color="gray" weight="regular">Server side computation written in PHP for database interaction and CRUD functionality.</Text></li>
+                </ul>
+              </Flex>
+            </Card>
+
             <a href="#" className={styles.anchor}>
               <Text className={styles.anchorText} weight="bold">View Full Resume</Text>
               <ArrowRightIcon className={styles.arrowRightIcon}/>
