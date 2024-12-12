@@ -1,6 +1,6 @@
 import { Badge, Em, Flex, Heading, Separator, Text, Card } from "@radix-ui/themes";
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import 'react-social-icons/facebook'
 import 'react-social-icons/linkedin'
 import 'react-social-icons/github'
@@ -30,7 +30,7 @@ export default function Home() {
                 </Link>
 
                 <Link href="#">
-                  <DiscordLogoIcon color="grey"  style={{ height: 25, width: 25 }} />
+                  <DiscordLogoIcon color="grey" style={{ height: 25, width: 25 }} />
                 </Link>
 
                 <Link href="#">
@@ -44,7 +44,7 @@ export default function Home() {
             <Flex gapY="2" style={{flexDirection: 'column'}}>
               <Heading size="5" weight="medium">ABOUT</Heading>
               <Text weight="light" color="gray" style={{maxWidth: '45rem'}}>
-                Senior Computer Science student expecting to graduate in Fall 2050. 
+                Computer Science student expecting to graduate in Fall 2025. 
                 Aspiring software developer with a strong background in web development, 
                 I am seeking an internship opportunity where I can contribute to 
                 innovative projects, embrace new challenges, and gain hands-on experience 
@@ -55,29 +55,29 @@ export default function Home() {
             <Flex gapY="2" style={{flexDirection: 'column'}}>
               <Heading size="4" weight="light">Technical Skills:</Heading>
               <Flex gap="2">
-                <Badge color="green" size="3">JavaScript</Badge>
-                <Badge color="green" size="3">C++</Badge>
-                <Badge color="green" size="3">HTML/CSS</Badge>
-                <Badge color="green" size="3">SQL</Badge>
+                <Badge radius="full" color="green" size="3">JavaScript</Badge>
+                <Badge radius="full" color="green" size="3">C++</Badge>
+                <Badge radius="full" color="green" size="3">HTML/CSS</Badge>
+                <Badge radius="full" color="green" size="3">SQL</Badge>
               </Flex>
 
               <Flex gap="2">
-                <Badge color="red" size="3">Git</Badge>
-                <Badge color="red" size="3">MongoDB</Badge>
-                <Badge color="red" size="3">MySQL</Badge>
-                <Badge color="red" size="3">AWS</Badge>
-                <Badge color="red" size="3">GCP</Badge>
+                <Badge radius="full" color="red" size="3">Git</Badge>
+                <Badge radius="full" color="red" size="3">MongoDB</Badge>
+                <Badge radius="full" color="red" size="3">MySQL</Badge>
+                <Badge radius="full" color="red" size="3">AWS</Badge>
+                <Badge radius="full" color="red" size="3">GCP</Badge>
               </Flex>
               
               <Flex gap="2">
-                <Badge color="indigo" size="3">React.js</Badge>
-                <Badge color="indigo" size="3">Next.js</Badge>
-                <Badge color="indigo" size="3">Node.js</Badge>
+                <Badge radius="full" color="indigo" size="3">React.js</Badge>
+                <Badge radius="full" color="indigo" size="3">Next.js</Badge>
+                <Badge radius="full" color="indigo" size="3">Node.js</Badge>
               </Flex>
 
               <Flex gap="2">
-                <Badge color="orange" size="3">RadixUI</Badge>
-                <Badge color="orange" size="3">Motion</Badge>
+                <Badge radius="full" color="orange" size="3">RadixUI</Badge>
+                <Badge radius="full" color="orange" size="3">Motion</Badge>
               </Flex>
   
             </Flex>
@@ -94,10 +94,10 @@ export default function Home() {
               <Flex gapY="2" style={{flexDirection: 'column'}}>
                 <Heading size="5" weight="light">This Website!</Heading>
                 <Flex gap="1">
-                  <Badge color="green" size="2">JavaScript</Badge>
-                  <Badge color="green" size="2">HTML/CSS</Badge>
-                  <Badge color="blue" size="2">Next.js</Badge>
-                  <Badge color="orange" size="2">RadixUI</Badge>
+                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                  <Badge radius="full" color="blue" size="2">Next.js</Badge>
+                  <Badge radius="full" color="orange" size="2">RadixUI</Badge>
                 </Flex>
                 <ul className={styles.listContainer}>
                   <li><Text color="gray" weight="regular" >Designed responsive, minimalistic web portfolio with clean colorscheme...I think (colorblind).</Text></li>
@@ -111,10 +111,10 @@ export default function Home() {
               <Flex gapY="2" style={{flexDirection: 'column'}}>
                 <Heading size="5" weight="light">PIC Health PWA</Heading>
                 <Flex gap="1">
-                  <Badge color="green" size="2">JavaScript</Badge>
-                  <Badge color="green" size="2">HTML/CSS</Badge>
-                  <Badge color="blue" size="2">React Native</Badge>
-                  <Badge color="red" size="2">Google Calendar API</Badge>
+                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                  <Badge radius="full" color="blue" size="2">React Native</Badge>
+                  <Badge radius="full" color="red" size="2">Google Calendar API</Badge>
                 </Flex>
                 <ul className={styles.listContainer}>
                   <li><Text color="gray" weight="regular" >Event and health resource management tool for the Pacific Islander Health organization.</Text></li>
@@ -128,9 +128,9 @@ export default function Home() {
               <Flex gap="2" style={{flexDirection: 'column'}}>
                 <Heading size="5" weight="light">SeniorSync</Heading>
                 <Flex gap="1">
-                  <Badge color="green" size="2">JavaScript</Badge>
-                  <Badge color="green" size="2">HTML/CSS</Badge>
-                  <Badge color="red" size="2">Pocketbase API</Badge>
+                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                  <Badge radius="full" color="red" size="2">Pocketbase API</Badge>
                 </Flex>
                 <ul className={styles.listContainer}>
                   <li><Text color="gray" weight="regular">Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
@@ -144,10 +144,10 @@ export default function Home() {
               <Flex gap="2" style={{flexDirection: 'column'}}>
                 <Heading size="5" weight="light">Student Forum</Heading>
                 <Flex gap="1">
-                  <Badge color="green" size="2">JavaScript</Badge>
-                  <Badge color="green" size="2">HTML/CSS</Badge>
-                  <Badge color="green" size="2">PHP</Badge>
-                  <Badge color="red" size="2">MySQL</Badge>
+                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                  <Badge radius="full" color="green" size="2">PHP</Badge>
+                  <Badge radius="full" color="red" size="2">MySQL</Badge>
                 </Flex>
                 <ul className={styles.listContainer}>
                   <li><Text color="gray" weight="regular">Reddit-style web forum tailored for CSUSM students to create threads, comment on posts and search through boards.</Text></li>

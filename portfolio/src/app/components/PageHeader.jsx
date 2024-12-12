@@ -44,12 +44,6 @@ export default function PageHeader() {
     handleToggleTheme();
   };
 
-  /* log whenever lightSwitch is turned on or off
-  useEffect(() => {
-    console.log("Light is", lightSwitch ? 'On' : 'Off');
-  }, [lightSwitch]);  
-  */
-
   return (
     <Flex className={styles.container}>
 
