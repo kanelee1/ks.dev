@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
+import { ThemeProvider } from "next-themes";
 import PageHeader from "./components/PageHeader";
 import Image from "next/image";
 
@@ -25,10 +26,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Theme appearance="dark">
-          <PageHeader/>
-          {children}
-        </Theme>
+        <ThemeProvider attribute="class">
+          <Theme>
+            <PageHeader/>
+            {children}
+          </Theme>
+        </ThemeProvider>
       </body>
     </html>
   );

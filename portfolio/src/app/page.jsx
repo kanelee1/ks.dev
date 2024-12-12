@@ -1,6 +1,6 @@
 import { Badge, Em, Flex, Heading, Separator, Text, Section } from "@radix-ui/themes";
-import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
-import * as Form from '@radix-ui/react-form'
+import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
 import 'react-social-icons/facebook'
 import 'react-social-icons/linkedin'
 import 'react-social-icons/github'
@@ -8,7 +8,6 @@ import 'react-social-icons/email'
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import { wrap } from "framer-motion";
 
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
         <section id="about" className={styles.sectionContainer}>
           <Flex gapY="8" style={{flexDirection: 'column'}}>
             <Flex gapY="2" style={{ flexDirection: 'column'}}>
-              <Heading size="8" weight="bold">Kane Svelan</Heading>
+              <Heading size="9" weight="bold">Kane Svelan</Heading>
               <Heading size="4" weight="regular">Student | Software Developer</Heading>
               <Flex gap="3">
                 <Link href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
@@ -135,8 +134,8 @@ export default function Home() {
               </ul>
             </Flex>
             <a href="#" className={styles.anchor}>
-              <Text className={styles.anchorText}>View Full CSV/Resume</Text>
-              <ArrowTopRightIcon />
+              <Text className={styles.anchorText} weight="bold">View Full Resume</Text>
+              <ArrowRightIcon className={styles.arrowRightIcon}/>
             </a>
 
           </Flex>

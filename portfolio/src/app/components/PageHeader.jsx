@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 import styles from './PageHeader.module.css'
 import { Flex, TabNav, Switch } from "@radix-ui/themes";
 import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
@@ -12,11 +13,16 @@ export default function PageHeader() {
   const [activeTab, setActiveTab] = useState("about");
   const [lightSwitch, setLightSwitch] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const {resolvedTheme, setTheme} = useTheme();
+
+  const handleToggleTheme = () => {
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+  };
 
   useEffect(() => {
     // set tabNav to hidden if window less than 600px
     const handleResize = () => {
-      setHidden(window.innerWidth > 600);
+      setHidden(window.innerWidth < 600);
     }
 
     // listen for screen resize
@@ -35,16 +41,14 @@ export default function PageHeader() {
   // toggle state of lightSwitch
   const handleLightSwitch = () => {
     setLightSwitch(prevState => !prevState); 
+    handleToggleTheme();
   };
 
-  // log whenever lightSwitch is turned on or off
-  /**
-   *  TO-DO:
-   *    Lightmode darkmode
-   */
+  /* log whenever lightSwitch is turned on or off
   useEffect(() => {
     console.log("Light is", lightSwitch ? 'On' : 'Off');
   }, [lightSwitch]);  
+  */
 
   return (
     <Flex className={styles.container}>

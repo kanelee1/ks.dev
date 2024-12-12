@@ -66,14 +66,32 @@
   color: #a2a5ab;
 }
 
-.anchorText {
-  padding-right: 2px;
+.anchor {
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .anchor:hover {
   color: rgb(193, 252, 193);
-  transition: color 0.3 ease;
+  text-decoration: underline;
 }
+
+.anchorText {
+  margin-right: 2px;
+  transition: transform 0.2s ease;
+}
+
+.arrowRightIcon {
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.anchor:hover .arrowRightIcon {
+  transform: translateX(5px);
+}
+
 
 .ctas a {
   appearance: none;
