@@ -7,15 +7,15 @@
     height: 60px;
 
     border-bottom: solid;
-    border-width: 1px;
-    border-color: rgba(36, 38, 42, 1);
-    background-color: rgba(17, 17, 19, 0.8);
+    border-width: 0.5px;
+    border-color: rgba(36, 38, 42, 0.5);
+    /*background-color: rgba(17, 17, 19, 0.8);*/
+    background-color: transparent;
     backdrop-filter: blur(9px);
     
     font-family: var(--font-geist-sans)
 }
 
-/*TO-DO: TabNav into Hamburger or smaller for mobile*/
 
 .lightSwitch {
     align-items: center;
