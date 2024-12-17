@@ -1,4 +1,4 @@
-import { Badge, Em, Flex, Heading, Separator, Text, Card } from "@radix-ui/themes";
+import { Badge, Em, Flex, Heading, Separator, Text, Card, IconButton } from "@radix-ui/themes";
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { color, motion } from "framer-motion";
 import 'react-social-icons/facebook'
@@ -21,21 +21,21 @@ export default function Home() {
               <Heading size="9" weight="bold">Kane Svelan</Heading>
               <Heading size="4" weight="regular">Student | Software Developer</Heading>
               <Flex gap="3">
-                <Link href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
-                  <LinkedInLogoIcon color="grey" style={{ height: 25, width: 25 }} />
-                </Link>
+                <a href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
+                  <LinkedInLogoIcon className={styles.socialIcon} />
+                </a>
 
-                <Link href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
-                  <GitHubLogoIcon color="grey" style={{ height: 25, width: 25 }} />
-                </Link>
+                <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
+                  <GitHubLogoIcon className={styles.socialIcon}/>
+                </a>
 
-                <Link href="#">
-                  <DiscordLogoIcon color="grey" style={{ height: 25, width: 25 }} />
-                </Link>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <DiscordLogoIcon className={styles.socialIcon}/>
+                </a>
 
-                <Link href="#">
-                  <EnvelopeClosedIcon color="grey" style={{ height: 25, width: 25 }} />
-                </Link>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <EnvelopeClosedIcon className={styles.socialIcon}/>
+                </a>
               </Flex>
             </Flex>
 
@@ -140,7 +140,7 @@ export default function Home() {
               </Flex>
             </Card>
 
-            <a href="#" className={styles.anchor}>
+            <a href="#" className={styles.anchor} target="_blank" rel="noopener noreferrer">
               <Text className={styles.anchorText} weight="bold">View Full Resume</Text>
               <ArrowRightIcon className={styles.arrowRightIcon}/>
             </a>

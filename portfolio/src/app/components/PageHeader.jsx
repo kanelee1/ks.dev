@@ -2,22 +2,14 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
 import styles from './PageHeader.module.css'
-import { Flex, TabNav, Switch } from "@radix-ui/themes";
-import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
+import { Flex, TabNav } from "@radix-ui/themes";
 import Link from 'next/link';
-
+import ThemeToggle from './ThemeToggle';
 
 export default function PageHeader() {
   const [activeTab, setActiveTab] = useState("about");
-  const [lightSwitch, setLightSwitch] = useState(false);
   const [hidden, setHidden] = useState(false);
-  const {resolvedTheme, setTheme} = useTheme();
-
-  const handleToggleTheme = () => {
-    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
-  };
 
   useEffect(() => {
     // set tabNav to hidden if window less than 600px
@@ -36,12 +28,6 @@ export default function PageHeader() {
   
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-  };
-
-  // toggle state of lightSwitch
-  const handleLightSwitch = () => {
-    setLightSwitch(prevState => !prevState); 
-    handleToggleTheme();
   };
 
   return (
@@ -65,12 +51,8 @@ export default function PageHeader() {
         </TabNav.Root>
       </Flex>
 
-      <Flex className={styles.lightSwitch} gap="2">
-        {/* TODO: add onClick() to change to dark mode */}
-        <Switch color='blue' defaultChecked={false}  onClick={() => handleLightSwitch()} />
-        {lightSwitch ? <SunIcon /> : <MoonIcon />}
-      </Flex>
-
+      <ThemeToggle />
+      
     </Flex>
   )
 }

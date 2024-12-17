@@ -1,3 +1,8 @@
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/blue-dark.css";
+
 .container {
     justify-content: space-between;
     position: sticky;
@@ -8,17 +13,11 @@
 
     border-bottom: solid;
     border-width: 0.5px;
-    border-color: rgba(36, 38, 42, 0.5);
-    /*background-color: rgba(17, 17, 19, 0.8);*/
+    border-color: var(--gray-3);
     background-color: transparent;
     backdrop-filter: blur(9px);
     
     font-family: var(--font-geist-sans)
-}
-
-
-.lightSwitch {
-    align-items: center;
 }
 
 .headerLogoText {

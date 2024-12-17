@@ -1,3 +1,9 @@
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/blue-dark.css";
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -6,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: var(--gray-1);
     --foreground: #ededed;
   }
 }
