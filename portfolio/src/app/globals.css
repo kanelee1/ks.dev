@@ -7,14 +7,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  z-index: auto;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--gray-1);
+    --background: var(--blue-2);
     --foreground: #ededed;
   }
+}
+
+/*
+ * modify this for Theme component styling.
+ * (Theme component is layered on top of :root styling)
+ */
+.radix-themes {
+  --color-background: var(--blue-2) !important;
 }
 
 html {

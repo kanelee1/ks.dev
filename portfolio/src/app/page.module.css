@@ -12,13 +12,14 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid; 
-  grid-template-rows: 20px 1fr 20px;
+  
   align-items: center;
   justify-items: center;
   min-height: 100svh;
   padding: 0 80px;
   font-family: var(--font-geist-sans);
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,10 +79,24 @@
   
 }
 
+.cardContainer {
+  flex-wrap: wrap;
+  min-width: fit-content;
+}
+
+.card {
+  box-shadow: var(--shadow-2);
+  margin: 0;
+  background-color: var(--blue-2);
+  /*border: 0.5px solid var(--gray-1);*/
+  flex-wrap: wrap;
+}
+
 .listContainer {
   flex-direction: row;
   margin-left: 1rem;
   color: #a2a5ab;
+  flex-wrap: wrap;
 }
 
 .anchor {
@@ -136,7 +151,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
   .page {
     padding: 32px;
     padding-bottom: 80px;

@@ -1,13 +1,8 @@
 import { Badge, Em, Flex, Heading, Separator, Text, Card, IconButton } from "@radix-ui/themes";
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
-import { color, motion } from "framer-motion";
-import 'react-social-icons/facebook'
-import 'react-social-icons/linkedin'
-import 'react-social-icons/github'
-import 'react-social-icons/email'
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
+import { Value } from "@radix-ui/themes/dist/cjs/components/data-list";
 
 
 export default function Home() {
@@ -41,7 +36,7 @@ export default function Home() {
 
             <Separator />
 
-            <Flex gapY="2" style={{flexDirection: 'column'}}>
+            <Flex gapY="5" style={{flexDirection: 'column'}}>
               <Heading size="5" weight="medium">ABOUT</Heading>
               <Text weight="light" color="gray" style={{maxWidth: '45rem'}}>
                 I am a Senior Computer Science student expecting to graduate in Fall 2025. 
@@ -87,60 +82,62 @@ export default function Home() {
         <Separator />
 
         <section id="projects" className={styles.sectionContainer}>
-          <Flex gap="8" style={{flexDirection: 'column'}}>
+          <Flex gap="5" style={{flexDirection: 'column'}}>
             <Heading size="5" weight="medium">PROJECTS</Heading>
 
-            <Card size="3">
-              <Flex gapY="2" style={{flexDirection: 'column'}}>
-                <Heading size="5" weight="light">PIC Health PWA</Heading>
-                <Flex gap="1">
-                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
-                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
-                  <Badge radius="full" color="blue" size="2">React Native</Badge>
-                  <Badge radius="full" color="red" size="2">Google Calendar API</Badge>
+            <Flex gap="7" className={styles.cardContainer}>
+              <Card size="3" variant="ghost" className={styles.card}>
+                <Flex gapY="2" style={{flexDirection: 'column'}}>
+                  <Heading size="5" weight="light">PIC Health PWA</Heading>
+                  <Flex gap="1">
+                    <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                    <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                    <Badge radius="full" color="blue" size="2">React Native</Badge>
+                    <Badge radius="full" color="red" size="2">Google Calendar API</Badge>
+                  </Flex>
+                  <ul className={styles.listContainer}>
+                    <li><Text color="gray" weight="light">Event and health resource management tool developed for the Pacific Islander Health organization and CSUSM Capstone Project.</Text></li>
+                    <li><Text color="gray" weight="light">Developed in React Native implementing native functionality for both Android and iOS users.</Text></li>
+                    <li><Text color="gray" weight="light">Implemented features including event fetching, filtering, and displaying using the Google Calendar API and PIC Health master calendar.</Text></li>
+                  </ul>
                 </Flex>
-                <ul className={styles.listContainer}>
-                  <li><Text color="gray" weight="regular" >Event and health resource management tool for the Pacific Islander Health organization.</Text></li>
-                  <li><Text color="gray" weight="regular">Implemented features includng fetching, filtering, and displaying upcoming events.</Text></li>
-                  <li><Text color="gray" weight="regular">User event requests and submission forms can be filled out via Google Forms API.</Text></li>
-                </ul>
-              </Flex>
-            </Card>
-
-            <Card size="3">
-              <Flex gap="2" style={{flexDirection: 'column'}}>
-                <Heading size="5" weight="light">SeniorSync</Heading>
-                <Flex gap="1">
-                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
-                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
-                  <Badge radius="full" color="red" size="2">Pocketbase API</Badge>
+              </Card>
+  
+              <Card size="3" variant="ghost" className={styles.card}>
+                <Flex gap="2" style={{flexDirection: 'column'}}>
+                  <Heading size="5" weight="light">SeniorSync</Heading>
+                  <Flex gap="1">
+                    <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                    <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                    <Badge radius="full" color="red" size="2">Pocketbase API</Badge>
+                  </Flex>
+                  <ul className={styles.listContainer}>
+                    <li><Text color="gray" weight="light">Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
+                    <li><Text color="gray" weight="light">Implemented user authentication and family member database relationships through Pocketbase dashboard.</Text></li>
+                    <li><Text color="gray" weight="light">Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events.</Text></li>
+                  </ul>
                 </Flex>
-                <ul className={styles.listContainer}>
-                  <li><Text color="gray" weight="regular">Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
-                  <li><Text color="gray" weight="regular">Implemented user authentication and family member database relationships through Pocketbase dashboard.</Text></li>
-                  <li><Text color="gray" weight="regular">Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events.</Text></li>
-                </ul>
-              </Flex>
-            </Card>
-
-            <Card size="3">
-              <Flex gap="2" style={{flexDirection: 'column'}}>
-                <Heading size="5" weight="light">Student Forum</Heading>
-                <Flex gap="1">
-                  <Badge radius="full" color="green" size="2">JavaScript</Badge>
-                  <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
-                  <Badge radius="full" color="green" size="2">PHP</Badge>
-                  <Badge radius="full" color="red" size="2">MySQL</Badge>
+              </Card>
+  
+              <Card size="3" variant="ghost" className={styles.card}>
+                <Flex gap="2" style={{flexDirection: 'column'}}>
+                  <Heading size="5" weight="light">Student Forum</Heading>
+                  <Flex gap="1">
+                    <Badge radius="full" color="green" size="2">JavaScript</Badge>
+                    <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
+                    <Badge radius="full" color="green" size="2">PHP</Badge>
+                    <Badge radius="full" color="red" size="2">MySQL</Badge>
+                  </Flex>
+                  <ul className={styles.listContainer}>
+                    <li><Text color="gray" weight="light">Reddit-style web forum tailored for students to create threads, comment on posts and search through boards.</Text></li>
+                    <li><Text color="gray" weight="light">Implemented features like user authentication, profile customization and post favoriting.</Text></li>
+                    <li><Text color="gray" weight="light">Server side computation written in PHP for database interaction and CRUD functionality.</Text></li>
+                  </ul>
                 </Flex>
-                <ul className={styles.listContainer}>
-                  <li><Text color="gray" weight="regular">Reddit-style web forum tailored for CSUSM students to create threads, comment on posts and search through boards.</Text></li>
-                  <li><Text color="gray" weight="regular">Implemented features like user authentication, profile customization and post favoriting.</Text></li>
-                  <li><Text color="gray" weight="regular">Server side computation written in PHP for database interaction and CRUD functionality.</Text></li>
-                </ul>
-              </Flex>
-            </Card>
+              </Card>
+            </Flex>
 
-            <a href="#" className={styles.anchor} target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" className={styles.anchor} target="_blank" rel="noopener noreferrer">
               <Text className={styles.anchorText} weight="bold">View Full Resume</Text>
               <ArrowRightIcon className={styles.arrowRightIcon}/>
             </a>
