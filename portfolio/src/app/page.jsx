@@ -1,4 +1,4 @@
-import { Badge, Em, Flex, Heading, Separator, Text, Card, IconButton } from "@radix-ui/themes";
+import { Badge, Em, Flex, Heading, Separator, Text, Card, Button } from "@radix-ui/themes";
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -8,11 +8,10 @@ import { Value } from "@radix-ui/themes/dist/cjs/components/data-list";
 export default function Home() {
   return (
     <div id="about" className={styles.page}>
-      <main>
-
+      <main className={styles.main}>
         <section id="about" className={styles.sectionContainer}>
-          <Flex gapY="8" style={{flexDirection: 'column'}}>
-            <Flex gapY="2" style={{ flexDirection: 'column'}}>
+          <Flex gapY="8" direction="column">
+            <Flex gapY="2" direction="column">
               <Heading size="9" weight="bold">Kane Svelan</Heading>
               <Heading size="4" weight="regular">Student | Software Developer</Heading>
               <Flex gap="3">
@@ -34,11 +33,10 @@ export default function Home() {
               </Flex>
             </Flex>
 
-            <Separator />
-
-            <Flex gapY="5" style={{flexDirection: 'column'}}>
+            <Flex gapY="5" direction="column">
+              
               <Heading size="5" weight="medium">ABOUT</Heading>
-              <Text weight="light" color="gray" style={{maxWidth: '45rem'}}>
+              <Text weight="light" color="gray">
                 I am a Senior Computer Science student expecting to graduate in Fall 2025. 
                 As an aspiring software developer with a strong background in web development, 
                 I am seeking an internship opportunity where I can contribute to 
@@ -47,16 +45,16 @@ export default function Home() {
               </Text>
             </Flex>
             
-            <Flex gapY="2" style={{flexDirection: 'column'}}>
+            <Flex gapY="2" direction="column">
               <Heading size="4" weight="light">Technical Skills:</Heading>
-              <Flex gap="2">
+              <Flex gap="2" className={styles.badgeContainer}>
                 <Badge radius="full" color="green" size="3">JavaScript</Badge>
                 <Badge radius="full" color="green" size="3">C++</Badge>
                 <Badge radius="full" color="green" size="3">HTML/CSS</Badge>
                 <Badge radius="full" color="green" size="3">SQL</Badge>
               </Flex>
 
-              <Flex gap="2">
+              <Flex gap="2" className={styles.badgeContainer}>
                 <Badge radius="full" color="red" size="3">Git</Badge>
                 <Badge radius="full" color="red" size="3">MongoDB</Badge>
                 <Badge radius="full" color="red" size="3">MySQL</Badge>
@@ -64,13 +62,13 @@ export default function Home() {
                 <Badge radius="full" color="red" size="3">GCP</Badge>
               </Flex>
               
-              <Flex gap="2">
+              <Flex gap="2" className={styles.badgeContainer}>
                 <Badge radius="full" color="indigo" size="3">React.js</Badge>
                 <Badge radius="full" color="indigo" size="3">Next.js</Badge>
                 <Badge radius="full" color="indigo" size="3">Node.js</Badge>
               </Flex>
 
-              <Flex gap="2">
+              <Flex gap="2" className={styles.badgeContainer}>
                 <Badge radius="full" color="orange" size="3">RadixUI</Badge>
                 <Badge radius="full" color="orange" size="3">Motion</Badge>
               </Flex>
@@ -79,17 +77,17 @@ export default function Home() {
           </Flex>
         </section>
 
-        <Separator />
+        <Separator className={styles.separator}/>
 
         <section id="projects" className={styles.sectionContainer}>
-          <Flex gap="5" direction="column">
+          <Flex gapY="5" direction="column">
             <Heading size="5" weight="medium">PROJECTS</Heading>
 
             <Flex gap="7" className={styles.cardContainer}>
               <Card size="3" variant="ghost" className={styles.card}>
-                <Flex gapY="2" style={{flexDirection: 'column'}}>
+                <Flex gapY="2" direction="column">
                   <Heading size="5" weight="light">PIC Health PWA</Heading>
-                  <Flex gap="1">
+                  <Flex gap="1" className={styles.badgeContainer}>
                     <Badge radius="full" color="green" size="2">JavaScript</Badge>
                     <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
                     <Badge radius="full" color="blue" size="2">React Native</Badge>
@@ -104,9 +102,9 @@ export default function Home() {
               </Card>
   
               <Card size="3" variant="ghost" className={styles.card}>
-                <Flex gap="2" style={{flexDirection: 'column'}}>
+                <Flex gap="2" direction="column">
                   <Heading size="5" weight="light">SeniorSync</Heading>
-                  <Flex gap="1">
+                  <Flex gap="1" className={styles.badgeContainer}>
                     <Badge radius="full" color="green" size="2">JavaScript</Badge>
                     <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
                     <Badge radius="full" color="red" size="2">Pocketbase API</Badge>
@@ -120,9 +118,9 @@ export default function Home() {
               </Card>
   
               <Card size="3" variant="ghost" className={styles.card}>
-                <Flex gap="2" style={{flexDirection: 'column'}}>
+                <Flex gap="2" direction="column">
                   <Heading size="5" weight="light">Student Forum</Heading>
-                  <Flex gap="1">
+                  <Flex gap="1" className={styles.badgeContainer}>
                     <Badge radius="full" color="green" size="2">JavaScript</Badge>
                     <Badge radius="full" color="green" size="2">HTML/CSS</Badge>
                     <Badge radius="full" color="green" size="2">PHP</Badge>
@@ -146,16 +144,18 @@ export default function Home() {
 
         </section>
 
-        <Separator />
+        <Separator className={styles.separator}/>
 
         <section id="contact" className={styles.sectionContainer}>
-          <Heading size="5" weight="medium">Contact Me!</Heading>
+          <Flex gapy="2" direction="column">
+            <Heading size="5" weight="medium">Contact Me!</Heading>
+          </Flex>
           
         </section>
+        <footer className={styles.footer}>
+          <Text size="1">Built using Next.js and RadixUI, deployed with GitHub Pages.</Text>
+        </footer>
       </main>
-      <footer className={styles.footer}>
-        <Text size="1">Built using Next.js and RadixUI, deployed with GitHub Pages.</Text>
-      </footer>
     </div>
   );
 }
