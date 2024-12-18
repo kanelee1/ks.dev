@@ -8,7 +8,7 @@ import { Value } from "@radix-ui/themes/dist/cjs/components/data-list";
 export default function Home() {
   return (
     <div id="about" className={styles.page}>
-      <main className={styles.main}>
+      <main>
 
         <section id="about" className={styles.sectionContainer}>
           <Flex gapY="8" style={{flexDirection: 'column'}}>
@@ -82,7 +82,7 @@ export default function Home() {
         <Separator />
 
         <section id="projects" className={styles.sectionContainer}>
-          <Flex gap="5" style={{flexDirection: 'column'}}>
+          <Flex gap="5" direction="column">
             <Heading size="5" weight="medium">PROJECTS</Heading>
 
             <Flex gap="7" className={styles.cardContainer}>
