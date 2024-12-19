@@ -149,12 +149,11 @@ export default function Home() {
         <section id="contact" className={styles.sectionContainer}>
           <Flex gapy="2" direction="column">
             <Heading size="5" weight="medium">Contact Me!</Heading>
+            <Flex justify="between" width="50%" >
+              
+            </Flex>
           </Flex>
-          
         </section>
-        <footer className={styles.footer}>
-          <Text size="1">Built using Next.js and RadixUI, deployed with GitHub Pages.</Text>
-        </footer>
       </main>
     </div>
   );

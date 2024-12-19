@@ -4,6 +4,8 @@ import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from "@radix-ui/themes";
 import { ThemeProvider } from "next-themes";
 import PageHeader from "./components/PageHeader";
+import PageFooter from "./components/PageFooter";
+
 import Image from "next/image";
 
 const geistSans = localFont({
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
           <Theme>
             <PageHeader/>
             <main>{children}</main>
+            <PageFooter />
           </Theme>
         </ThemeProvider>
       </body>
