@@ -21,7 +21,7 @@
  * (Theme component is layered on top of :root styling)
  */
 .radix-themes {
-  --color-background: var(--blue-2) !important;
+  --color-background: var(--blue-1) !important;
 }
 
 html {

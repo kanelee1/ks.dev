@@ -2,7 +2,6 @@ import { Badge, Em, Flex, Heading, Separator, Text, Card, Button } from "@radix-
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Value } from "@radix-ui/themes/dist/cjs/components/data-list";
 
 
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
                   <DiscordLogoIcon className={styles.socialIcon}/>
                 </a>
 
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
                   <EnvelopeClosedIcon className={styles.socialIcon}/>
                 </a>
               </Flex>
@@ -37,7 +36,7 @@ export default function Home() {
               
               <Heading size="5" weight="medium">ABOUT</Heading>
               <Text weight="light" color="gray">
-                I am a Senior Computer Science student expecting to graduate in Fall 2025. 
+                I am a Senior Computer Science student based in San Diego, CA expecting to graduate in Fall 2025. 
                 As an aspiring software developer with a strong background in web development, 
                 I am seeking an internship opportunity where I can contribute to 
                 innovative projects, embrace new challenges, and gain hands-on experience 
@@ -94,9 +93,9 @@ export default function Home() {
                     <Badge radius="full" color="red" size="2">Google Calendar API</Badge>
                   </Flex>
                   <ul className={styles.listContainer}>
-                    <li><Text color="gray" weight="light">Event and health resource management tool developed for the Pacific Islander Health organization and CSUSM Capstone Project.</Text></li>
-                    <li><Text color="gray" weight="light">Developed in React Native implementing native functionality for both Android and iOS users.</Text></li>
-                    <li><Text color="gray" weight="light">Implemented features including event fetching, filtering, and displaying using the Google Calendar API and PIC Health master calendar.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Event and health resource management tool developed for the Pacific Islander Health organization and CSUSM Capstone Project.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Developed in React Native implementing native functionality for both Android and iOS users.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Implemented features including event fetching, filtering, and displaying using the Google Calendar API and PIC Health master calendar.</Text></li>
                   </ul>
                 </Flex>
               </Card>
@@ -110,9 +109,9 @@ export default function Home() {
                     <Badge radius="full" color="red" size="2">Pocketbase API</Badge>
                   </Flex>
                   <ul className={styles.listContainer}>
-                    <li><Text color="gray" weight="light">Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
-                    <li><Text color="gray" weight="light">Implemented user authentication and family member database relationships through Pocketbase dashboard.</Text></li>
-                    <li><Text color="gray" weight="light">Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Implemented user authentication and family member database relationships through Pocketbase dashboard.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events.</Text></li>
                   </ul>
                 </Flex>
               </Card>
@@ -127,9 +126,9 @@ export default function Home() {
                     <Badge radius="full" color="red" size="2">MySQL</Badge>
                   </Flex>
                   <ul className={styles.listContainer}>
-                    <li><Text color="gray" weight="light">Reddit-style web forum tailored for students to create threads, comment on posts and search through boards.</Text></li>
-                    <li><Text color="gray" weight="light">Implemented features like user authentication, profile customization and post favoriting.</Text></li>
-                    <li><Text color="gray" weight="light">Server side computation written in PHP for database interaction and CRUD functionality.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Reddit-style web forum tailored for students to create threads, comment on posts and search through boards.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Implemented features like user authentication, profile customization and post favoriting.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Server side computation written in PHP for database interaction and CRUD functionality.</Text></li>
                   </ul>
                 </Flex>
               </Card>

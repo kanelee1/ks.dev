@@ -18,6 +18,15 @@
   padding: 1rem;
 }
 
+.socialIcon {
+  color: var(--gray-11);
+  transition: color 0.2s ease;
+}
+
+.socialIcon:hover {
+  color: var(--gray-12);
+}
+
 @media (max-width: 800px) {
     .footer {
       flex-wrap: wrap;
