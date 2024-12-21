@@ -8,6 +8,11 @@ import { Flex, Switch } from '@radix-ui/themes';
 import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
 
 const ThemeToggle = () => {
+    /**
+     * TO DO:
+     * Fix bug when refreshing theme on light mode doesnt save lightswitch state
+     * use localStorage with the useEffect hook
+     */
     const [lightSwitch, setLightSwitch] = useState(false);
     const {resolvedTheme, setTheme} = useTheme();
 
@@ -24,7 +29,7 @@ const ThemeToggle = () => {
 
     return (
         <Flex className={styles.lightSwitch} gap="2">
-            <Switch color='blue' defaultChecked={false}  onClick={() => handleLightSwitch()} />
+            <Switch color='blue'  onClick={() => handleLightSwitch()} />
             {lightSwitch ? <SunIcon /> : <MoonIcon />}
         </Flex>
   )

@@ -21,7 +21,25 @@
   overflow-x: hidden;
   flex-wrap: wrap;
 
-  padding: 0rem 10rem;
+  padding: 0rem 20rem;
+}
+
+@media (max-width: 1200px) {
+  .page {
+    padding: 0rem 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    padding: 0rem 2rem;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -141,17 +159,7 @@
   }
 }
 
-@media (max-width: 800px) {
-  .page {
-    padding: 0rem 2rem;
-    padding-bottom: 80px;
-  }
 
-  .main {
-    flex-wrap: wrap;
-  }
-
-}
 
 @media (prefers-color-scheme: dark) {
   .logo {
