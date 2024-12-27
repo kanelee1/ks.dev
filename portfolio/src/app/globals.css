@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--blue-2);
+    --background: var(--blue-1);
     --foreground: #ededed;
   }
 }
@@ -22,6 +22,7 @@
  */
 .radix-themes {
   --color-background: var(--blue-1) !important;
+  transition: background-color 0.3s ease;
 }
 
 html {

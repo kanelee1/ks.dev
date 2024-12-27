@@ -17,7 +17,8 @@
     background-color: transparent;
     backdrop-filter: blur(9px);
     
-    font-family: var(--font-geist-sans)
+    font-family: var(--font-geist-sans);
+    transition: border-color 0.3s ease;
 }
 
 .headerLogoText {

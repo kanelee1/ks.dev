@@ -32,7 +32,7 @@ const ThemeToggle = () => {
             <Switch color='blue'  onClick={() => handleLightSwitch()} />
             {lightSwitch ? <SunIcon /> : <MoonIcon />}
         </Flex>
-  )
+    )
 }
 
 export default ThemeToggle
