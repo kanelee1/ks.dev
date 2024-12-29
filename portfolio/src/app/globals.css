@@ -4,18 +4,6 @@
 @import "@radix-ui/colors/blue-dark.css";
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--blue-1);
-    --foreground: #ededed;
-  }
-}
-
 /*
  * modify this for Theme component styling.
  * (Theme component is layered on top of :root styling)

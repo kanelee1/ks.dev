@@ -1,4 +1,4 @@
-import { Badge, Em, Flex, Heading, Separator, Text, Card, Button } from "@radix-ui/themes";
+import { Badge, Flex, Heading, Separator, Text, Card } from "@radix-ui/themes";
 import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -15,19 +15,19 @@ export default function Home() {
               <Heading size="4" weight="regular">Student | Software Developer</Heading>
               <Flex gap="3">
                 <a href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
-                  <LinkedInLogoIcon className={styles.socialIcon} />
+                  <LinkedInLogoIcon height="25" width="25" className={styles.socialIcon} />
                 </a>
 
                 <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
-                  <GitHubLogoIcon className={styles.socialIcon}/>
+                  <GitHubLogoIcon height="25" width="25" className={styles.socialIcon}/>
                 </a>
 
                 <a href="https://discord.com/users/376672204261425154" target="_blank" rel="noopener noreferrer">
-                  <DiscordLogoIcon className={styles.socialIcon}/>
+                  <DiscordLogoIcon height="25" width="25" className={styles.socialIcon}/>
                 </a>
 
                 <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
-                  <EnvelopeClosedIcon className={styles.socialIcon}/>
+                  <EnvelopeClosedIcon height="25" width="25" className={styles.socialIcon}/>
                 </a>
               </Flex>
             </Flex>
@@ -109,7 +109,7 @@ export default function Home() {
                     <Badge radius="full" color="red" size="2">Pocketbase API</Badge>
                   </Flex>
                   <ul className={styles.listContainer}>
-                    <li><Text color="gray" weight="light" className={styles.listItemText}>Web app enabeling family members of senior citizens to monitor their relatives' health and activities.</Text></li>
+                    <li><Text color="gray" weight="light" className={styles.listItemText}>Web app enabeling family members of senior citizens to monitor their relatives&apos; health and activities.</Text></li>
                     <li><Text color="gray" weight="light" className={styles.listItemText}>Implemented user authentication and family member database relationships through Pocketbase dashboard.</Text></li>
                     <li><Text color="gray" weight="light" className={styles.listItemText}>Designed UI/UX, including an interactive user dashboard to display health, activities, and upcoming social events.</Text></li>
                   </ul>
@@ -148,7 +148,7 @@ export default function Home() {
           <Flex gapY="5" direction="column">
             <Heading size="5" weight="medium">CONTACT</Heading>
             <Text>
-              If you'd like to get in touch, please feel free to reach out using the following methods.
+              If you&apos;d like to get in touch, please feel free to reach out using the following methods.
             </Text>
             <Flex direction="column">
               <Heading size="4" weight="medium">Email</Heading>
