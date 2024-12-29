@@ -4,6 +4,11 @@
 @import "@radix-ui/colors/blue-dark.css";
 
 
+:root {
+  background: var(--blue-1);
+}
+
+
 /*
  * modify this for Theme component styling.
  * (Theme component is layered on top of :root styling)
