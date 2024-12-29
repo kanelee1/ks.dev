@@ -30,11 +30,17 @@ export default function PageHeader() {
     setActiveTab(tab);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    })
+  }
+
   return (
     <Flex className={styles.container}>
 
       <Flex className={styles.headerLogo}>
-        <Link href="#about" className={styles.headerLogoText}>ks.dev</Link>
+        <Link href="#" onClick={scrollToTop} className={styles.headerLogoText}>ks.dev</Link>
       </Flex>
 
       <Flex className={styles.tabNavContainer}>

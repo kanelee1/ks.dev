@@ -110,7 +110,8 @@
 }
 
 .separator {
-  /*width: 100%*/
+  /*width: 100%;*/
+  height: 1px;
   margin: 0;
 }
 
@@ -128,6 +129,7 @@
 }
 
 .anchorText {
+  color: var(--gray-12);
   margin-right: 2px;
   transition: transform 0.2s ease;
 }

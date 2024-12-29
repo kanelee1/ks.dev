@@ -76,7 +76,7 @@ export default function Home() {
           </Flex>
         </section>
 
-        <Separator className={styles.separator}/>
+        <Separator className={styles.separator} size="2"/>
 
         <section id="projects" className={styles.sectionContainer}>
           <Flex gapY="5" direction="column">
@@ -132,24 +132,45 @@ export default function Home() {
                   </ul>
                 </Flex>
               </Card>
+              <a href="/resume.pdf" className={styles.anchor} target="_blank" rel="noopener noreferrer">
+                <Text className={styles.anchorText} weight="light">View Full Resume</Text>
+                <ArrowRightIcon className={styles.arrowRightIcon}/>
+              </a>
             </Flex>
-
-            <a href="/resume.pdf" className={styles.anchor} target="_blank" rel="noopener noreferrer">
-              <Text className={styles.anchorText} weight="bold">View Full Resume</Text>
-              <ArrowRightIcon className={styles.arrowRightIcon}/>
-            </a>
-
           </Flex>
+
 
         </section>
 
-        <Separator className={styles.separator}/>
+        <Separator className={styles.separator} size="2"/>
 
         <section id="contact" className={styles.sectionContainer}>
-          <Flex gapy="2" direction="column">
-            <Heading size="5" weight="medium">Contact Me!</Heading>
-            <Flex justify="between" width="50%" >
-              
+          <Flex gapY="5" direction="column">
+            <Heading size="5" weight="medium">CONTACT</Heading>
+            <Text>
+              If you'd like to get in touch, please feel free to reach out using the following methods.
+            </Text>
+            <Flex direction="column">
+              <Heading size="4" weight="medium">Email</Heading>
+              <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
+                <Text>svela002@csusm.edu</Text>
+              </a>
+            </Flex>
+            <Flex direction="column">
+              <Heading size="4" weight="medium">LinkedIn</Heading>
+              <a href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
+                <Text>linkedin.com/in/kane-svelan/</Text>
+              </a>
+            </Flex>
+            <Flex direction="column">
+              <Heading size="4" weight="medium">GitHub</Heading>
+              <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
+                <Text>github.com/kanelee1</Text>
+              </a>
+            </Flex>
+            <Flex direction="column">
+              <Heading size="4" weight="medium">Discord</Heading>
+              <Text>svela002</Text>
             </Flex>
           </Flex>
         </section>

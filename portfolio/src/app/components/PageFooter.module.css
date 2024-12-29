@@ -8,9 +8,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 1rem;
     flex-wrap: wrap;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
+    color: var(--gray-11);
 }
 
 .content {
@@ -40,6 +40,6 @@
 @media (hover: hover) and (pointer: fine) {
     .footer a:hover {
       text-decoration: underline;
-      text-underline-offset: 4px;
+      text-underline-offset: 2px;
     }
 }
