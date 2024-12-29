@@ -10,13 +10,13 @@ const Footer = () => {
             <Flex direction="column">
                 <Text size="1">© Kane Svelan 2025</Text>
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"><Text size="1">Full Resume</Text></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><Text size="1">View Source</Text></a>
+                <a href="https://github.com/kanelee1/kanelee1.github.io/tree/main/portfolio" target="_blank" rel="noopener noreferrer"><Text size="1">View Source</Text></a>
             </Flex>
             <Flex gapX="2">
-                <a href='#' target="_blank" rel="noopener noreferrer"><LinkedInLogoIcon className={styles.socialIcon}/></a>
-                <a href='#' target="_blank" rel="noopener noreferrer"><GitHubLogoIcon className={styles.socialIcon}/></a>
-                <a href='#' target="_blank" rel="noopener noreferrer"><DiscordLogoIcon className={styles.socialIcon}/></a>
-                <a href='#' target="_blank" rel="noopener noreferrer"><EnvelopeClosedIcon className={styles.socialIcon}/></a>
+                <a href='https://www.linkedin.com/in/kane-svelan/' target="_blank" rel="noopener noreferrer"><LinkedInLogoIcon className={styles.socialIcon}/></a>
+                <a href='https://github.com/kanelee1' target="_blank" rel="noopener noreferrer"><GitHubLogoIcon className={styles.socialIcon}/></a>
+                <a href='https://discord.com/users/376672204261425154' target="_blank" rel="noopener noreferrer"><DiscordLogoIcon className={styles.socialIcon}/></a>
+                <a href='mailto:svela002@csusm.edu' target="_blank" rel="noopener noreferrer"><EnvelopeClosedIcon className={styles.socialIcon}/></a>
             </Flex>
         </Flex>
         

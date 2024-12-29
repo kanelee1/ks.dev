@@ -22,7 +22,7 @@ export default function Home() {
                   <GitHubLogoIcon className={styles.socialIcon}/>
                 </a>
 
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.com/users/376672204261425154" target="_blank" rel="noopener noreferrer">
                   <DiscordLogoIcon className={styles.socialIcon}/>
                 </a>
 
@@ -152,25 +152,27 @@ export default function Home() {
             </Text>
             <Flex direction="column">
               <Heading size="4" weight="medium">Email</Heading>
-              <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:svela002@csusm.edu" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
                 <Text>svela002@csusm.edu</Text>
               </a>
             </Flex>
             <Flex direction="column">
               <Heading size="4" weight="medium">LinkedIn</Heading>
-              <a href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/kane-svelan/" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
                 <Text>linkedin.com/in/kane-svelan/</Text>
               </a>
             </Flex>
             <Flex direction="column">
               <Heading size="4" weight="medium">GitHub</Heading>
-              <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/kanelee1" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
                 <Text>github.com/kanelee1</Text>
               </a>
             </Flex>
             <Flex direction="column">
               <Heading size="4" weight="medium">Discord</Heading>
-              <Text>svela002</Text>
+              <a href="https://discord.com/users/376672204261425154" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
+                <Text>svela002</Text>
+              </a>
             </Flex>
           </Flex>
         </section>

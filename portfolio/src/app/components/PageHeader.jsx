@@ -33,12 +33,17 @@ export default function PageHeader() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
+      behavior: 'smooth',
     })
   }
 
+  /**
+   * TO DO:
+   * Change active tab when user scrolls to a specific section
+   */
   return (
     <Flex className={styles.container}>
-
+      
       <Flex className={styles.headerLogo}>
         <Link href="#" onClick={scrollToTop} className={styles.headerLogoText}>ks.dev</Link>
       </Flex>

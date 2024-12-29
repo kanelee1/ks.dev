@@ -143,10 +143,12 @@
   transform: translateX(5px);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.contactAnchor {
+  width: fit-content;
+}
+
+.contactAnchor:hover {
+  text-decoration: underline;
 }
 
 /* Enable hover only on non-touch devices */
