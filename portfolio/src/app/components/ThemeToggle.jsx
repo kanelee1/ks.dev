@@ -25,9 +25,9 @@ const ThemeToggle = () => {
             setLightSwitch(storedTheme === 'light');    // sets lightswitch to true if default theme is 'light', false otherwise
         } else {
             // if no theme stored, set 'dark' to default
-            const defaultTheme = resolvedTheme === 'dark' ? 'dark' : 'light'; // 
+            const defaultTheme = 'dark';
             setTheme(defaultTheme);
-            setLightSwitch(defaultTheme === 'light') 
+            setLightSwitch(false); 
         }
     }, [resolvedTheme, setTheme])
 

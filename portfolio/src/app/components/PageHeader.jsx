@@ -17,6 +17,9 @@ export default function PageHeader() {
       setHidden(window.innerWidth < 600);
     }
 
+    // call handle resize to set initial state
+    handleResize();
+
     // listen for screen resize
     window.addEventListener('resize', handleResize);
 
