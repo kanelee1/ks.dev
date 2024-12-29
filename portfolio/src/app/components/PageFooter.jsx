@@ -10,7 +10,7 @@ const Footer = () => {
             <Flex direction="column">
                 <Text size="1">© Kane Svelan 2025</Text>
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"><Text size="1">Full Resume</Text></a>
-                <a href="https://github.com/kanelee1/kanelee1.github.io/tree/main/portfolio" target="_blank" rel="noopener noreferrer"><Text size="1">View Source</Text></a>
+                <a href="https://github.com/kanelee1/ks.dev/tree/main/portfolio" target="_blank" rel="noopener noreferrer"><Text size="1">View Source</Text></a>
             </Flex>
             <Flex gapX="2">
                 <a href='https://www.linkedin.com/in/kane-svelan/' target="_blank" rel="noopener noreferrer"><LinkedInLogoIcon className={styles.socialIcon}/></a>
