@@ -20,7 +20,11 @@ const Footer = () => {
         </Flex>
         
         <Flex style={{marginTop: '3rem', alignItems: 'center', justifyContent: 'center'}}>
-            <Text size="1">Built using Next.js and RadixUI</Text>
+            <Text size="1">Built using 
+                <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'> Next.js </a>
+                and 
+                <a href='https://www.radix-ui.com/' target='_blank' rel='noopener noreferrer'> RadixUI </a>
+            </Text>
         </Flex>
     </footer>
   )

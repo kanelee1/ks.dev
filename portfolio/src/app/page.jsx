@@ -150,7 +150,7 @@ export default function Home() {
                 If you&apos;d like to get in touch, please feel free to reach out using the following methods.
               </Text>
               <Text weight="light" color="gray">
-                My preferred method of contact is through email or LinkedIn.
+                My preferred method of contact is through Email or LinkedIn.
               </Text>
             </Flex>
             <Flex direction="column">
@@ -162,7 +162,7 @@ export default function Home() {
             <Flex direction="column">
               <Heading size="4" weight="medium">LinkedIn</Heading>
               <a href="https://www.linkedin.com/in/kane-svelan/" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
-                <Text color="gray" weight="light">linkedin.com/in/kane-svelan/</Text>
+                <Text color="gray" weight="light">linkedin.com/in/kane-svelan</Text>
               </a>
             </Flex>
             <Flex direction="column">

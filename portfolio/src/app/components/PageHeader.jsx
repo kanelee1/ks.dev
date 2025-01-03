@@ -11,6 +11,10 @@ export default function PageHeader() {
   const [activeTab, setActiveTab] = useState("about");
   const [hidden, setHidden] = useState(false);
 
+  /**
+   * TO DO:
+   * Fix bug where tab nav flashes on on page render for smaller screens
+   */
   useEffect(() => {
     // set tabNav to hidden if window less than 600px
     const handleResize = () => {
