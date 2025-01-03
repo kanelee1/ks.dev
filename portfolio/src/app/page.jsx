@@ -1,5 +1,5 @@
 import { Badge, Flex, Heading, Text, Card } from "@radix-ui/themes";
-import { LinkedInLogoIcon, GitHubLogoIcon, DiscordLogoIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { LinkedInLogoIcon, GitHubLogoIcon, PaperPlaneIcon, EnvelopeClosedIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -20,10 +20,6 @@ export default function Home() {
 
                 <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
                   <GitHubLogoIcon height="25" width="25" className={styles.socialIcon}/>
-                </a>
-
-                <a href="https://discord.com/users/376672204261425154" target="_blank" rel="noopener noreferrer">
-                  <DiscordLogoIcon height="25" width="25" className={styles.socialIcon}/>
                 </a>
 
                 <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
@@ -173,12 +169,6 @@ export default function Home() {
               <Heading size="4" weight="medium">GitHub</Heading>
               <a href="https://github.com/kanelee1" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
                 <Text color="gray" weight="light">github.com/kanelee1</Text>
-              </a>
-            </Flex>
-            <Flex direction="column">
-              <Heading size="4" weight="medium">Discord</Heading>
-              <a href="https://discord.com/users/376672204261425154" className={styles.contactAnchor} target="_blank" rel="noopener noreferrer">
-                <Text color="gray" weight="light">svela002</Text>
               </a>
             </Flex>
           </Flex>
