@@ -7,12 +7,12 @@
   overflow-x: hidden;
   flex-wrap: wrap;
 
-  padding: 0rem 20rem;
+  padding: 0rem 25rem;
 }
 
 @media (max-width: 1200px) {
   .page {
-    padding: 0rem 10rem;
+    padding: 0rem 30rem;
   }
 }
 
@@ -100,6 +100,12 @@
   transition: box-shadow 0.3s ease;
   flex-wrap: wrap;
   padding: 1rem;
+  transition: transform 0.3s ease;
+  
+}
+
+.card:hover {
+  transform: scale(1.025);
 }
 
 .listContainer {
