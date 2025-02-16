@@ -11,34 +11,23 @@ export default function Home() {
         <section id="about" className={styles.sectionContainer}>
           <Flex gapY="8" direction="column">
             <Flex gapY="2" direction="column">
-              <Flex direction="row" style={{alignItems: 'center'}}>
-                <Flex>
-                  <Image
-                    src="/PFP.JPG"
-                    width={100}
-                    height={100}
-                    alt="Me!"
-                  />
-                </Flex>
-                <Flex direction="column" style={{marginLeft: '1rem'}}>
-                  <Heading size="9" weight="bold">Kane Svelan</Heading>
-                  <Heading size="4" weight="regular" style={{marginLeft: '4px'}}>Student | Software Developer</Heading>
-                  <Flex gap="2" style={{marginLeft: '3px'}}>
-                    <a href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
-                      <LinkedInLogoIcon height="25" width="25" className={styles.socialIcon} />
-                    </a>
+              <Flex direction="column">
+                <Heading size="9" weight="bold">Kane Svelan</Heading>
+                <Heading size="4" weight="regular" style={{marginLeft: '4px'}}>Student | Software Developer</Heading>
+                <Flex gap="2" style={{marginLeft: '3px', marginTop: '6px'}}>
+                  <a href="https://www.linkedin.com/in/kane-svelan/" target="_blank" rel="noopener noreferrer">
+                    <LinkedInLogoIcon height="25" width="25" className={styles.socialIcon} />
+                  </a>
 
-                    <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
-                      <GitHubLogoIcon height="25" width="25" className={styles.socialIcon}/>
-                    </a>
+                  <a href="https://github.com/kanelee1" target="_blank" rel="noopener noreferrer">
+                    <GitHubLogoIcon height="25" width="25" className={styles.socialIcon}/>
+                  </a>
 
-                    <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
-                      <EnvelopeClosedIcon height="25" width="25" className={styles.socialIcon}/>
-                    </a>
-                  </Flex>
+                  <a href="mailto:svela002@csusm.edu" target="_blank" rel="noopener noreferrer">
+                    <EnvelopeClosedIcon height="25" width="25" className={styles.socialIcon}/>
+                  </a>
                 </Flex>
               </Flex>
-
             </Flex>
 
             <Flex gapY="5" direction="column">
